@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+
+    My Blog
+
+{% endblock title %}
+
+{% block css_files %}
+
+    <link rel="stylesheet" href="{% static "blog/index.css" %}">
+
+{% endblock css_files %}
+
+
+
+
+
+{% block content %}
+
+    <section id="welcome">
+        <header>
+            <img src="{% static "blog/images/max.jpg" %}" alt="The author of this blog">
+            <h2>Esteban's Blog</h2>
+        </header>
+        <p>Hi</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>My Latest posts</h2>
+        <ul>
+            {% include "blog/includes/post.html" %}
+
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>What I do</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi temporibus cum culpa obcaecati doloremque, et distinctio autem aperiam assumenda inventore labore repellat eos reiciendis velit ut saepe iste accusamus?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis est laudantium eum magni eius rem blanditiis temporibus, quaerat corrupti, excepturi nostrum quos quisquam possimus iste fugiat sint? Excepturi, qui enim.</p>
+    </section>
+
+{% endblock content %}
+
+
+
