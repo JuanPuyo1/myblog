@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+
+    This post title
+
+{% endblock title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static "blog/post-detail.css" %}">
+
+    <link rel="stylesheet" href="{% static "blog/index.css" %}">
+
+{% endblock css_files %}
+
+
+{% block content %}
+
+    <section id="summary">
+        <h2>Post title</h2>
+        <article>
+            <img src="{% static "blog/images/mountains.jpg" %}" alt="Post title">
+            <address>By Esteban</address>
+            <div>
+                Last updated on <time>July 10</time>
+            </div>
+        </article>
+    </section> 
+
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maiores amet quia, in dolorum quis eius, animi ea optio nulla quas sequi? Quidem dolores sint odit dolorum. Corrupti, ex molestiae.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat modi corporis. Error odit reprehenderit aut iste, nisi dolore laborum tempora dicta in quia nemo provident earum repudiandae aperiam at.</p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur corporis beatae. Possimus aliquam deserunt animi atque placeat, corrupti, nam nobis earum, impedit ipsam eligendi modi? Eius quaerat amet minus.
+        </p>
+    </main>
+        
+{% endblock content %}
